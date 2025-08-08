@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDH Project Lead Quick Start Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Header with centered progress counter -->
+        <header class="presentation-header">
+            <div class="header-logo" id="homeLogo">
+    <img src="./assets/tdh-logo.png"
+         alt="Tennessee Department of Health"
+         class="dept-logo">
+</div>
+
+            
+            <!-- Centered Progress Counter -->
+            <div class="slide-counter">
+                <span id="currentSlide">1</span> of <span id="totalSlides">8</span>
+            </div>
+            
+            <div class="navigation-controls">
+                <button id="prevBtn" class="btn btn--outline btn--sm">← Previous</button>
+                <button id="nextBtn" class="btn btn--primary btn--sm">Next →</button>
+            </div>
+        </header>
+
+        <!-- Slide 1: Title Slide -->
+        <div id="slide-1" class="slide active">
+            <div class="slide-content title-slide">
+                <div class="title-logos">
+                    <img src="./assets/tdh-logo.png" alt="Tennessee Department of Health" class="dept-logo">
+                </div>
+                
+                <h1>TDH Project Lead Quick Start Guide</h1>
+                <h2>Strategic Plan Implementation in Asana</h2>
+                
+                <div class="version-info">
+                    <p><strong>Version 1.2 | July 2025</strong></p>
+                    <p class="department">Office of Strategic Initiatives (OSI) | Office of Quality and Performance Management (QPM)</p>
+                </div>
+<!-- 🆕  TOC card ------------------------------------------------ -->
+<div class="toc-card">
+  <nav class="toc" aria-label="Quick-start navigation">
+    <ul>
+      <li><a data-slide="1">🏠 Title & Overview</a></li>
+      <li><a data-slide="2">Your Role</a></li>
+      <li><a data-slide="3">Step 1 – Access Tasks</a></li>
+      <li><a data-slide="4">Step 2 – Create / Update</a></li>
+      <li><a data-slide="5">Step 3 – Comments</a></li>
+      <li><a data-slide="6">Step 4 – Dashboards</a></li>
+      <li><a data-slide="7">Step 5 – Support</a></li>
+      <li><a data-slide="8">Key Takeaways</a></li>
+    </ul>
+  </nav>
+</div>
+<!-- ------------------------------------------------------------- -->
+                <div class="structure-overview">
+                    <h3>Strategic Plan Structure:</h3>
+                    <ul class="structure-list">
+                        <li><strong>8 Goals</strong> → Asana Projects</li>
+                        <li><strong>28 Objectives</strong> → Asana Tasks</li>
+                        <li><strong>160 Action Steps</strong> → Asana Subtasks</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Slide 2: Your Role as Project Lead -->
+        <div class="slide" id="slide-2">
+            <div class="slide-content">
+                <h1>Your Role as Project Lead</h1>
+                <div class="role-description">
+                    <p>As a Project Lead, you're responsible for managing your assigned action steps from TDH's 2024-2027 Strategic Plan.</p>
+                </div>
+                
+                <div class="visual-hierarchy">
+                    <h3>Strategic Plan Hierarchy:</h3>
+                    <div class="hierarchy-visual">
+                        <div class="hierarchy-item goals">Goals</div>
+                        <div class="hierarchy-arrow">↓</div>
+                        <div class="hierarchy-item objectives">Objectives</div>
+                        <div class="hierarchy-arrow">↓</div>
+                        <div class="hierarchy-item action-steps">Action Steps</div>
+                    </div>
+                </div>
+
+                <div class="responsibilities">
+                    <h3>Key Responsibilities:</h3>
+                    <ul class="checklist">
+                        <li>Update task status and progress regularly</li>
+                        <li>Communicate with stakeholders through comments</li>
+                        <li>Ensure deliverables meet quality standards</li>
+                        <li>Maintain accurate due dates and assignments</li>
+                        <li>Participate in monthly progress reviews</li>
+                    </ul>
+                </div>
+
+                <div class="process-note">
+                    <p><strong>This guide provides a simplified 5-step process</strong> to get started in Asana and maintain your 4-Year Strategic Plan tasks effectively.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Step 1 -->
+        <div id="slide-3" class="slide">
+            <div class="slide-content">
+                <h1>Step 1: Access Your Strategic Plan Tasks</h1>
+                
+                <div class="step-content">
+                    <div class="getting-started">
+                        <h3>Getting Started:</h3>
+                        <ul>
+                            <li><strong>Log into Asana</strong> using your @tn.gov email address</li>
+                            <li><strong>Navigate to your assigned project</strong> (corresponds to a Strategic Plan Goal)</li>
+                            <li><strong>Locate your action steps</strong> listed as subtasks under relevant objectives</li>
+                        </ul>
+                    </div>
+
+                    <div class="what-youll-see">
+                        <h3>What You'll See:</h3>
+                        <ul>
+                            <li>Each action step is listed as a <strong>subtask</strong>, identified by a unique Asana Task ID that serves as its <strong>primary key</strong>—ensuring every step in the 24-27 TDH Strategic Plan can be distinctly referenced and efficiently managed.</li>
+
+                            <li>Each subtask shows assignee (you), due date, and current status</li>
+                            <li>Custom fields track TDH identifiers and CFG metrics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="screenshot-container">
+<figure class="screenshot-figure">
+<img src="./assets/SP_to_Asana_Connection_Project_Lead_Contribution_2025-07-22.png" 
+     alt="Asana project hierarchy showing TDH Strategic Plan Goals, Objectives, and Action Steps structure" 
+     class="screenshot-image">
+<figcaption class="screenshot-caption">
+<strong>TDH Strategic Plan Structure in Asana:</strong> This view demonstrates how the 
+8 Strategic Plan Goals are organized as Asana Projects, with 28 Objectives displayed 
+as Tasks and 160 Action Steps shown as Subtasks. Project leads can easily navigate 
+this hierarchy to access their assigned responsibilities.
+</figcaption>
+</figure>
+</div>
+
+
+            <div class="tip">
+                    <p><strong>💡 Tip:</strong> <a  href="https://help.asana.com/s/article/understanding-projects?language=en_US#:~:text=Favorite%20the%20project%20by%20clicking%20the%20star%20symbol%20beside%20the%20project%20name%2C%20adding%20it%20to%20your%20sidebar%20for%20easy%20access."
+    target="_blank" rel="noopener noreferrer">
+    Favorite or Bookmark
+</a> your main strategic plan projects for easy access</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Step 2 -->
+        <div id="slide-4" class="slide">
+            <div class="slide-content">
+                <h1>Step 2: Create and Update Tasks</h1>
+                
+                <div class="step-content">
+                    <div class="essential-info">
+                        <h3>Essential Task Information:</h3>
+                        <ul class="checklist">
+                            <li>Clear, descriptive title</li>
+                            <li>Due date (realistic and achievable)</li>
+                            <li>Description section describing the deliverable</li>
+                            <li>Assignee (you as the project lead)</li>
+                            <li>Collaborators (key stakeholders who need updates)</li>
+                        </ul>
+                    </div>
+
+                    <div class="creation-steps">
+                        <h3>Task Creation Steps:</h3>
+                        <ol>
+                            <li>Click <strong>'+ Add subtask'</strong> within the appropriate objective</li>
+                            <li>Fill in title, description, and due date</li>
+                            <li><strong>Assign to yourself</strong> as project lead</li>
+                            <li>Add relevant <strong>custom fields</strong> (TDH ID, Status, Quarter)</li>
+                        </ol>
+                    </div>
+                </div>
+
+ <!-- Step-2 Video (replaces the placeholder box) -->
+<div class="subtask-video">
+
+  <figure class="video-figure">
+
+  <!-- NEW caption bar – visually fused to the video -->
+  <figcaption class="video-caption">
+    <strong>Prefer to watch instead of read?</strong>
+    This 120-second clip shows exactly how to create a
+    <em>subtask</em>—the level every Project Lead will work in first.
+  </figcaption>
+
+  <div class="video-wrapper">
+    <iframe
+      src="https://www.youtube.com/embed/SigKsH3bDz8?si=xvTJKZeQPmXGcll_"
+      title="How to create subtasks in Asana (2 min)"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+
+</figure>
+
+
+</div>
+
+
+<div class="tip">
+  <p><strong>💡 Tip:</strong>
+     Need a refresher on the details?
+     <a href="https://help.asana.com/s/article/how-to-create-and-assign-tasks?language=en_US"
+        target="_blank" rel="noopener noreferrer">
+        Asana’s step-by-step guide&nbsp;on creating &amp; assigning tasks
+     </a>
+     walks through every field shown in the video.
+  </p>
+</div>
+<!-- END — Project-Lead video & tip -->
+
+<!--
+  📸 SCREENSHOT PLACEHOLDER 2 (kept for reference; delete when no longer needed)
+  <div class="screenshot-placeholder">
+    …
+  </div>
+-->
+
+
+                <div class="status-grid">
+                    <div class="status-item">
+                        <div class="status status--info">In Progress</div>
+                        <p>Mark when you begin work</p>
+                    </div>
+                    <div class="status-item">
+                        <div class="status status--success">Complete</div>
+                        <p>Only when deliverable is finished</p>
+                    </div>
+                    <div class="status-item">
+                        <div class="status status--warning">Blocked</div>
+                        <p>If waiting on external dependencies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Step 3 -->
+        <div id="slide-5" class="slide">
+            <div class="slide-content">
+                <h1>Step 3: Use Comments for Communication</h1>
+                
+                <div class="step-content">
+                    <div class="why-comments">
+                        <h3>Why Comments Matter:</h3>
+                        <ul class="checklist">
+                            <li><strong>Replaces email chains</strong> and meeting back-and-forth</li>
+                            <li><strong>Keeps all project communication</strong> in one place</li>
+                            <li><strong>Automatically notifies</strong> task collaborators of updates</li>
+                            <li><strong>Maintains continuous record</strong> of decisions and progress</li>
+                        </ul>
+                    </div>
+
+                    <div class="best-practices">
+                        <h3>Best Practices:</h3>
+                        <ul class="checklist">
+                            <li><strong>@mention specific people</strong> for targeted responses</li>
+                            <li><strong>Ask questions directly</strong> instead of scheduling meetings</li>
+                            <li><strong>Share progress updates</strong> weekly or bi-weekly</li>
+                            <li><strong>Document key decisions</strong> and reasoning</li>
+                            <li><strong>Tag urgent items</strong> that need immediate attention</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="comment-examples">
+                    <h3>Example Comments:</h3>
+                    
+                    <div class="example-box progress">
+                        <h4>Progress Update:</h4>
+                        <p>"Week 3 update: Completed stakeholder interviews (5/7). Remaining interviews scheduled for next Tuesday. Draft analysis will be ready by Friday. @John.Doe - can you review the preliminary findings?"</p>
+                    </div>
+                    
+                    <div class="example-box help">
+                        <h4>Help Request:</h4>
+                        <p>"@Team - I'm blocked on getting approval from Legal. Has anyone worked with them on similar policy reviews? Need guidance on next steps."</p>
+                    </div>
+                </div>
+
+                <!-- Step-3 Video (replaces the placeholder box) -->
+<div class="subtask-video">
+
+  <figure class="video-figure">
+
+    <!-- caption bar – visually fused to the video -->
+    <figcaption class="video-caption">
+      <strong>Prefer to watch instead of read?</strong>
+      This clip shows comments, @-mentions, and message options
+      that keep every conversation tied to its work.
+    </figcaption>
+
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/jawgaJCj3RA?start=29"
+        title="Communicate in Asana – comments, messages & more"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+
+  </figure>
+
+</div>
+
+<!-- concise Tip -->
+<div class="tip">
+  <p><strong>💡 Tip:</strong>
+     Want more than Comments?  
+     <a href="https://help.asana.com/s/article/task-comments-and-attachments"
+        target="_blank" rel="noopener noreferrer">
+        Asana’s guide to Comments &amp; Attachments
+     </a>
+     covers pinning key notes, grouping files, and @-mentioning tasks for richer context.
+  </p>
+</div>
+<!-- END — communication video & tip -->
+</div> <!-- end .slide-content for Slide-5 -->
+</div> <!-- end #slide-5 -->
+
+<!-- Slide 6 – Step 4 -->
+<div id="slide-6" class="slide">
+  <div class="slide-content">
+    <h1>Step 4: Track Progress with Dashboards</h1>
+
+    <!-- ── WHAT YOU GET ─────────────────────────── -->
+    <section class="dashboard-features">
+      <h3>What These Dashboards Tell You</h3>
+      <ul class="checklist">
+        <li><strong>Completion rates</strong> by objective &amp; goal</li>
+        <li><strong>Overdue / at-risk items</strong> flagged automatically</li>
+        <li><strong>Trend lines</strong> that surface progress over time</li>
+        <li><strong>Workload insights</strong> across project leads</li>
+      </ul>
+    </section>
+
+    <!-- ── MONTHLY REVIEW FLOW ──────────────────── -->
+    <section class="monthly-review">
+      <h3>Possible Monthly Review Flow</h3>
+      <ol>
+        <li><strong>Open the ELT dashboard</strong> <em>(SharePoint ► “Performance Management System" ► “Strategic Plan Progress Dashboard”)</em> and review for accuracy</li>
+        <li><strong>Move into Asana and scan overdue (red) tasks</strong> for overdue or blocked work</li>
+        <li><strong>Jump into the task</strong> &amp; add a brief comment update ＋ documents</li>
+        <li><strong>Refresh</strong> to verify your numbers roll up correctly for leadership</li>
+      </ol>
+    </section>
+
+    <!-- ── LOCAL PROJECT-LEVEL DASHBOARD SHOT ───── -->
+    <figure class="screenshot-figure">
+      <img src="./assets/Asana_Standard_Project_Dashboard_2025-07-26.png"
+           alt="Standard Asana project dashboard showing key completion and workload widgets"
+           class="screenshot-image">
+      <figcaption class="screenshot-caption">
+  <strong>Your Asana&nbsp;Project&nbsp;Dashboard:</strong> a one-page view of completed&nbsp;vs&nbsp;incomplete work,
+  overdue items, assignee workload and burn-down over time.&nbsp;
+  Use <em>Add&nbsp;widget ► Filters</em> to tailor it—OSI / QPM can help optimize.&nbsp;
+  <a href="https://help.asana.com/s/article/project-dashboards"
+     target="_blank" rel="noopener noreferrer">
+     Learn more&nbsp;
+  </a>
+</figcaption>
+
+    </figure>
+
+    <!-- ── INTEGRATION CARDS ─────────────────────── -->
+    <div class="integration-grid">
+
+      <!-- ELT snapshot -->
+      <a class="integration-item"
+         href="https://tennessee.sharepoint.com/sites/DC-OQI/Performance"
+         target="_blank" rel="noopener noreferrer">
+        <h4>TDH Performance<br>Management System</h4>
+        <p>ELT-level snapshot (Tableau on SharePoint)</p>
+      </a>
+
+      <!-- CFG benchmarks -->
+      <a class="integration-item"
+         <a class="integration-item" href="https://www.tn.gov/transparenttn/performance-management.html"
+         target="_blank" rel="noopener noreferrer">
+        <h4>Customer-Focused<br>Government (CFG)</h4>
+        <p>State reporting benchmarks (Tableau on website)</p>
+      </a>
+
+      <!-- Full PDF of the plan -->
+      <a class="integration-item"
+         href="https://tennessee.sharepoint.com/sites/DC-COM-OSI/SP/SiteAssets/TDH%20Strategic%20Plan%202024-2027.pdf"
+         target="_blank" rel="noopener noreferrer">
+        <h4>TN Department of Health<br>4-Year Strategic Plan<br>2024-2027</h4>
+        <p>Full plan &amp; goal language (PDF on Sharepoint)</p>
+      </a>
+
+    </div><!-- /.integration-grid -->
+
+    <!-- ── REMINDER BAR ─────────────────────────── -->
+    <p class="important-note">
+      <strong>⚠️ Important:</strong> keep task / sub-task statuses fresh—these dashboards feed
+      funding and resource decisions.
+    </p>
+
+  </div><!-- /.slide-content -->
+</div><!-- /#slide-6 -->
+
+
+<!-- Slide 7 – Step 5 -->
+<div id="slide-7" class="slide">
+  <div class="slide-content">
+    <h1>Step 5: Access Support and Resources</h1>
+
+    <!-- ── SUPPORT GRID ─────────────────────────── -->
+    <div class="support-grid">
+
+      <!-- TECHNICAL SUPPORT ----------------------- -->
+      <div class="support-section">
+        <h3>Technical Support:</h3>
+        <ul class="contact-list">
+          <li><strong>Asana Admin Team:</strong> Nathan Johnston, Jason Howes</li>
+          <li><strong>Strategic Plan Questions:</strong> Olivia Hall</li>
+          <li><strong>Asana Help&nbsp;Center:</strong>
+              <a href="https://help.asana.com/s/?language=en_US"
+                 target="_blank" rel="noopener noreferrer">
+                 help.asana.com
+              </a>
+          </li>
+          <li><strong>Asana Forum:</strong>
+              <a href="https://forum.asana.com/"
+                 target="_blank" rel="noopener noreferrer">
+                 forum.asana.com
+              </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- TRAINING RESOURCES ---------------------- -->
+      <div class="support-section">
+        <h3>Training Resources:</h3>
+        <ul class="contact-list">
+          <li><strong>Asana Academy:</strong>
+              <a href="https://academy.asana.com/"
+                 target="_blank" rel="noopener noreferrer">
+                 academy.asana.com
+              </a>
+          </li>
+          <li><strong>Lunch &amp; Learn Sessions:</strong> Internal group training</li>
+          <li><strong>One-on-one Training:</strong>
+              <a href="https://outlook.office365.com/book/B_ProjectLeads@tn.gov/?ismsaljsauthenabled"
+                 target="_blank" rel="noopener noreferrer">
+                 Bookings link
+              </a>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- /.support-grid -->
+
+    <!-- ── RESPONSE TABLE ───────────────────────── -->
+    <div class="resources-table">
+      <table class="resources">
+        <thead>
+          <tr><th>Resource</th><th>Description</th><th>Response Time</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Technical Issues</td>
+            <td>Asana login, navigation, basic functionality</td>
+            <td>1-2 business days</td>
+          </tr>
+          <tr>
+            <td>Strategic Plan Questions</td>
+            <td>Action-step clarification, progress reporting</td>
+            <td>1-2 business days</td>
+          </tr>
+          <tr>
+            <td>Training Requests</td>
+            <td>Personalized or group training sessions</td>
+            <td>Scheduled within 2 weeks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── CONTACT CARDS ────────────────────────── -->
+    <div class="contact-cards">
+      <div class="contact-card">
+        <h4>Jason&nbsp;Howes</h4>
+        <p>Director of Business Intelligence (QPM)<br>Jason.Howes@tn.gov</p>
+      </div>
+      <div class="contact-card">
+        <h4>Nathan&nbsp;Johnston</h4>
+        <p>Innovation &amp; Systems Manager (OSI)<br>Nathan.Johnston@tn.gov</p>
+      </div>
+      <div class="contact-card">
+        <h4>Olivia&nbsp;Hall</h4>
+        <p>Director of Strategic Planning (OSI)<br>Olivia.Hall@tn.gov</p>
+      </div>
+    </div>
+
+  </div><!-- /.slide-content -->
+</div><!-- /#slide-7 -->
+
+
+       
+
+        <!-- Slide 8: Key Takeaways -->
+        <div id="slide-8" class="slide">
+            <div class="slide-content">
+                <h1>Key Takeaways and Next Steps</h1>
+                
+                <div class="five-steps-recap">
+                    <h3>Your 5-Step Process:</h3>
+                    <div class="steps-list-container">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-text">Access Your Strategic Plan Tasks</div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-text">Create and Update Subtasks</div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-text">Use Comments for Communication</div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-text">Track Progress with Dashboards</div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">5</div>
+                            <div class="step-text">Access Support and Resources</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="important-reminders">
+                    <h3>Important Reminders:</h3>
+                    <ul class="reminder-list">
+                        <li><strong>Your updates feed leadership dashboards</strong> - keep them current and accurate</li>
+                        <li><strong>Use comments instead of emails</strong> - maintain transparency and project history</li>
+                        <li><strong>Ask for help early</strong> - training and support resources are available</li>
+                        <li><strong>Focus on outcomes</strong> - mark tasks complete only when deliverables are finished</li>
+                    </ul>
+                </div>
+
+                <div class="call-to-action">
+                    <div class="cta-box">
+                        <h3>Ready to Get Started?</h3>
+                                <div class="cta-buttons">
+            <!-- direct link to the Asana sign-in page -->
+          <nav class="cta-links">
+  <a class="cta-link"
+     href="https://app.asana.com/"                target="_blank" rel="noopener noreferrer">
+     Login to Asana
+  </a>
+
+  <a class="cta-link"
+     href="https://outlook.office365.com/book/B_ProjectLeads@tn.gov/?ismsaljsauthenabled"
+     target="_blank" rel="noopener noreferrer">
+     MS Booking
+  </a>
+
+  <a class="cta-link"
+     href="https://form.asana.com/?k=HxqaQ6kVrnP7mPeJLynFuA&d=12901432179627"
+     target="_blank" rel="noopener noreferrer">
+     Support Request Form
+  </a>
+</nav>
+
+
+        </div><!-- /.cta-buttons -->
+
+                
+
+    <script src="app.js"></script>
+</body>
+</html>
