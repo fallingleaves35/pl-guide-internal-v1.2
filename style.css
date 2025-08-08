@@ -2223,3 +2223,37 @@ if (mastheadLogo){
   font-size: 1rem;                    /* previously 0.9 rem */
   line-height: 1.35;
 }
+
+/* Fallback RGB tokens if not previously defined */
+:root {
+  --color-yellow-500-rgb: 234, 179, 8;
+  --color-yellow-700: #a16207;
+  --color-slate-700: #374151;
+  --color-orange-500-rgb: 249, 115, 22;
+  --color-orange-600-rgb: 234, 88, 12;
+  --color-orange-700: #c2410c;
+  --color-orange-800: #9a3412;
+  --color-red-700: #b91c1c;
+  --color-teal-600-rgb: 13, 116, 128;
+  --color-teal-800: #0f5f66;
+}
+
+/* ===== TDH Status Section (Slide 4) ===== */
+.tdh-status { margin-top: var(--space-20); }
+.tdh-status h2 { margin-bottom: var(--space-8); }
+.status-intro { color: var(--color-text-secondary); margin-bottom: var(--space-16); }
+.status-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-16); }
+.status-card { background-color: var(--color-surface); border: 1px solid var(--color-card-border); border-radius: var(--radius-md); padding: var(--space-16); box-shadow: var(--shadow-sm); }
+.status-badge { display: inline-flex; align-items: center; gap: var(--space-8); padding: var(--space-6) var(--space-12); border-radius: var(--radius-full); font-weight: var(--font-weight-medium); font-size: var(--font-size-sm); border: 1px solid transparent; }
+.status-one-liner { margin: var(--space-8) 0 var(--space-12); font-size: 14px; color: var(--color-text-secondary); }
+.status-card details { border-top: 1px solid var(--color-card-border-inner); padding-top: var(--space-12); }
+.status-card summary { font-weight: var(--font-weight-medium); cursor: pointer; outline: none; }
+
+/* Specific status color tokens using existing palette */
+.status--not-started { background-color: rgba(var(--color-yellow-500-rgb), var(--status-bg-opacity)); color: var(--color-yellow-700); border-color: rgba(var(--color-yellow-500-rgb), var(--status-border-opacity)); }
+.status--in-progress { background-color: rgba(var(--color-slate-500-rgb), var(--status-bg-opacity)); color: var(--color-slate-700, #2d3748); border-color: rgba(var(--color-slate-500-rgb), var(--status-border-opacity)); }
+.status--on-track { background-color: rgba(var(--color-teal-500-rgb), var(--status-bg-opacity)); color: var(--color-teal-700); border-color: rgba(var(--color-teal-500-rgb), var(--status-border-opacity)); }
+.status--off-track { background-color: rgba(var(--color-orange-500-rgb), var(--status-bg-opacity)); color: var(--color-orange-700); border-color: rgba(var(--color-orange-500-rgb), var(--status-border-opacity)); }
+.status--at-risk { background-color: rgba(var(--color-orange-600-rgb), var(--status-bg-opacity)); color: var(--color-orange-800); border-color: rgba(var(--color-orange-600-rgb), var(--status-border-opacity)); }
+.status--blocked { background-color: rgba(var(--color-red-500-rgb), var(--status-bg-opacity)); color: var(--color-red-700); border-color: rgba(var(--color-red-500-rgb), var(--status-border-opacity)); }
+.status--completed { background-color: rgba(var(--color-teal-600-rgb), var(--status-bg-opacity)); color: var(--color-teal-800); border-color: rgba(var(--color-teal-600-rgb), var(--status-border-opacity)); }
