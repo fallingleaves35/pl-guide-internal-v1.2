@@ -706,6 +706,18 @@ document.addEventListener('click', (e) => {
 });
 
 });
+// Enhance details behavior in TDH Status section: allow one open at a time
+document.addEventListener('click', (e) => {
+  if (e.target.tagName.toLowerCase() === 'summary') {
+    const details = e.target.parentElement;
+    const group = details.closest('.status-legend');
+    if (group) {
+      group.querySelectorAll('details[open]').forEach(d => {
+        if (d !== details) d.removeAttribute('open');
+      });
+    }
+  }
+});
 
 // Export for potential external use
 if (typeof module !== 'undefined' && module.exports) {
