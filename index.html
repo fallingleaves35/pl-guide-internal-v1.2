@@ -235,22 +235,104 @@ this hierarchy to access their assigned responsibilities.
 -->
 
 
-                <div class="status-grid">
-                    <div class="status-item">
-                        <div class="status status--info">In Progress</div>
-                        <p>Mark when you begin work</p>
-                    </div>
-                    <div class="status-item">
-                        <div class="status status--success">Complete</div>
-                        <p>Only when deliverable is finished</p>
-                    </div>
-                    <div class="status-item">
-                        <div class="status status--warning">Blocked</div>
-                        <p>If waiting on external dependencies</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                <!-- TDH Status Section: Expanded Guidance -->
+<section class="tdh-status" aria-labelledby="tdh-status-heading">
+  <h2 id="tdh-status-heading">TDH Status: what to pick and when</h2>
+  <p class="status-intro">
+    Use <strong>TDH Status</strong> to reflect current state of the <em>subtask</em>. Update whenever you start work, hit a delay,
+    or finish. This field feeds leadership dashboards.
+  </p>
+
+  <div class="status-legend" role="list" aria-label="Status options">
+    <article class="status-card" role="listitem">
+      <div class="status-badge status--not-started">Not Started</div>
+      <p class="status-one-liner">Assigned but no work has begun.</p>
+      <details>
+        <summary>When to use</summary>
+        <ul>
+          <li>Task is acknowledged and has a due date, but work has not begun.</li>
+          <li>Waiting on kickoff from your team or initial info.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="status-card" role="listitem">
+      <div class="status-badge status--in-progress">In Progress</div>
+      <p class="status-one-liner">Work has started and is moving.</p>
+      <details>
+        <summary>When to use</summary>
+        <ul>
+          <li>You or your team have begun work on the deliverable.</li>
+          <li>No known blockers preventing progress.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="status-card" role="listitem">
+      <div class="status-badge status--on-track">On Track</div>
+      <p class="status-one-liner">On schedule with clear path to finish.</p>
+      <details>
+        <summary>When to use</summary>
+        <ul>
+          <li>Planned finish date is achievable with current resources.</li>
+          <li>Dependencies are known and lined up.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="status-card" role="listitem">
+      <div class="status-badge status--off-track">Off Track</div>
+      <p class="status-one-liner">Behind schedule; plan needs correction.</p>
+      <details>
+        <summary>When to use</summary>
+        <ul>
+          <li>Due date is unlikely to be met without changes.</li>
+          <li>Scope or staffing changed and timeline slipped.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="status-card" role="listitem">
+      <div class="status-badge status--at-risk">At Risk</div>
+      <p class="status-one-liner">Could miss target if issues persist.</p>
+      <details>
+        <summary>When to use</summary>
+        <ul>
+          <li>Upcoming dependency might slip or information is pending.</li>
+          <li>New risks identified; mitigation underway.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="status-card" role="listitem">
+      <div class="status-badge status--blocked">Blocked</div>
+      <p class="status-one-liner">Cannot proceed until something unblocks.</p>
+      <details>
+        <summary>When to use</summary>
+        <ul>
+          <li>Waiting on external approval, deliverable, or access.</li>
+          <li>Technical or policy barrier prevents work from continuing.</li>
+        </ul>
+      </details>
+    </article>
+
+    <article class="status-card" role="listitem">
+      <div class="status-badge status--completed">Completed</div>
+      <p class="status-one-liner">Deliverable finished and accepted.</p>
+      <details>
+        <summary>When to use</summary>
+        <ul>
+          <li>Work is done, reviewed as needed, and no further action remains.</li>
+          <li>Attach final file or link before setting to Completed.</li>
+        </ul>
+      </details>
+    </article>
+  </div>
+
+  <div class="status-footnote">
+    <p><strong>Tip:</strong> Update status <em>and</em> add a short comment when you switch to <strong>Off Track</strong>, <strong>At Risk</strong>, or <strong>Blocked</strong> so leadership understands the “why.”</p>
+  </div>
+</section>
 
         <!-- Slide 5: Step 3 -->
         <div id="slide-5" class="slide">
